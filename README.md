@@ -3,11 +3,12 @@
 ## Table of Content
 ---
  - [Project Overview](#project-overview)
- - [Data Source](#data-source)
+ - [Data Sources](#data-sources)
  - [Data Cleaning/Preparation](#data-cleaning/preparation)
+ - [Tools](#tools)
  - [Data Modelling](#data-modelling)
  - [Exploratory Data Analysis](#exploratory-data-analysis)
- - [Data Analysis](#data-exploratory)
+ - [Data Analysis](#data-Analysis)
    
 ## Project Overview
 ---
@@ -24,42 +25,43 @@ The data used in this project comes from three main tables:
 
 ## Tools
 ---
-Excel
-Power Bi
+- Excel
+- SQL
+- Power Bi
 
 ## Data Cleaning/Preparation
 ---
 Data Cleaning/Preparation
 The data was cleaned and prepared as follows:
-•	Duplicate Entries: Removed duplicate customers based on CustomerID and ensured unique DrugID in the drug lookup table.
-•	Data Types: Converted SaleDate to date format and ensured numerical fields like UnitsSold were of the correct type.
-•	Missing Values: Addressed any missing values through imputation or removal where necessary.
-•	Merging Tables: Merged the three tables on relevant keys:
-•	CustomerID from the Customer Table to link with the Sales Data.
-•	DrugID from the Drug Lookup Table to link with the Sales Data.
-- Power Query: Power QUERY WILL BE USED  for data extraction
+  - Duplicate Entries: Removed duplicate customers based on CustomerID and ensured unique DrugID in the drug lookup table.
+  - Data Types: Converted SaleDate to date format and ensured numerical fields like UnitsSold were of the correct type.
+  - Missing Values: Addressed any missing values through imputation or removal where necessary.
+  - Merging Tables: Merged the three tables on relevant keys:
+  - CustomerID from the Customer Table to link with the Sales Data.
+  - DrugID from the Drug Lookup Table to link with the Sales Data.
+  - Power Query: Power QUERY WILL BE USED  for data extraction
   
 ## Data Modelling
 ---
 The final merged dataset contains the following columns:
-•	CustomerID: Unique identifier for each customer.
-•	FirstName, LastName, Age, Gender, Country, OtherCustomerInfo: Customer details.
-•	DrugID: Unique identifier for each drug.
-•	DrugName, UnitSalesPrice, CostOfProduction, Treats: Drug details.
-•	SaleID, UnitsSold, SaleDate, BuyerType: Sales transaction details.
+  - CustomerID: Unique identifier for each customer.
+  - FirstName, LastName, Age, Gender, Country, OtherCustomerInfo: Customer details.
+  - DrugID: Unique identifier for each drug.
+  - DrugName, UnitSalesPrice, CostOfProduction, Treats: Drug details.
+  - SaleID, UnitsSold, SaleDate, BuyerType: Sales transaction details.
 
 
 ## Exploratory Data Analysis
 ---
 Initial analysis was performed to identify trends and patterns:
-•	Customer Segmentation: Analyzed customer demographics to identify key segments (e.g., age, gender).
-•	Sales Trends: Evaluated sales performance over time, identifying peak sale periods.
-•	Product Performance: Assessed which drugs generated the most revenue and had the highest sales volume.
+  - Customer Segmentation: Analyzed customer demographics to identify key segments (e.g., age, gender).
+  - Sales Trends: Evaluated sales performance over time, identifying peak sale periods.
+  - Product Performance: Assessed which drugs generated the most revenue and had the highest sales volume.
 ### Data Analysis
 The analysis revealed several insights:
-•	Top Customers: Identified top customers by total sales volume.
-•	Most Profitable Drugs: Analyzed drugs with the highest profit margins (Unit Sales Price - Cost of Production).
-•	Sales by Customer Type: Compared sales performance between different buyer types (e.g., Seller vs. User).
+ - Top Customers: Identified top customers by total sales volume.
+ - Most Profitable Drugs: Analyzed drugs with the highest profit margins (Unit Sales Price - Cost of Production).
+ - Sales by Customer Type: Compared sales performance between different buyer types (e.g., Seller vs. User).
 ### Example Insights
 1.	Customer Trends: Frequent buyers aged 50-70 showed the highest purchase frequency.
 2.	Product Trends: Amoxicillin and Ibuprofen were among the top-selling drugs.
