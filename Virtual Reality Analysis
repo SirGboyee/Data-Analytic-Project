@@ -10,12 +10,108 @@
  - [Data Analysis](#data-Analysis)
 
 ## Project Preview
-This report analyzes the usage of Virtual Reality (VR) in education among students across various regions, grades, and fields of study. It highlights engagement levels, perceived effectiveness, and the impact of VR on learning outcomes, creativity, and collaboration.
+This report analyzes the usage of Virtual Reality (VR) in education among students 
+across various regions, grades, and fields of study. It highlights engagement levels, 
+perceived effectiveness, and the impact of VR on learning outcomes, creativity, and 
+collaboration.
 
+## Dataset Summary
+The dataset includes information from 5,000 students across different educational levels and fields of study. Key variables include:
+ - Age
+ - Gender
+ - Grade Level
+ - Field of Study
+ - Usage of VR in Education
+ - Hours of VR Usage Per Week
+ - Engagement Level
+ - Improvement in Learning Outcomes
+ - Subject
+ - Instructor VR Proficiency
+ - Perceived Effectiveness of VR
+ - Access to VR Equipment
+ - Impact on Creativity
+ - Stress Level with VR Usage
+ - Collaboration with Peers via VR
+ - Feedback from Educators on VR
+ - Interest in Continuing VR Based Learning
+ - Region
+ - School Support for VR in Curriculum
 
 ## Data Sources
-## Data Cleaning/Preparation
-## Tools
-## Data Modelling
-## Explanatory Data Analysis
-## Data Analysis
+The Data source is of this project comes from the main table recorded during the research 
+for the impact on Virtual Reality in education and result were recorded.
+
+## Data Cleaning Process
+To ensure the dataset's integrity and reliability, the following data cleaning steps were implemented:
+- Removing Duplicates: Checked for and removed any duplicate entries to maintain unique student records.
+- Handling Missing Values: Identified and addressed missing data. For missing numerical values, we calculated the mean for imputation, while categorical fields were either filled with the mode or marked as "Unknown."
+- Data Type Validation: Ensured that all variables were of the correct data type (e.g., integers for age and hours, strings for gender and subjects).
+- Outlier Detection: Analyzed numerical fields for outliers and confirmed that they were valid data points, particularly in hours of VR usage and engagement levels.
+- Standardizing Categories: Standardized categorical responses (e.g., "Yes," "No," "Neutral") for consistency.
+
+## Data Preparation
+Once the data was cleaned, the following preparation steps were taken:
+- Encoding Categorical Variables: Converted categorical variables into numerical format using one-hot encoding for analysis (e.g., Gender, Usage of VR).
+- Normalization of Numerical Data: Normalized the hours of VR usage and engagement levels to bring them to a similar scale for better comparative analysis.
+- Feature Selection: Identified key features relevant to the analysis, ensuring that all necessary fields were included for insights.
+
+## Tools Used
+The following tools and software were utilized in the data cleaning and preparation process:
+ - Python: 
+ - Excel: Used for initial data handling, cleaning, and basic analysis.
+ - SQL: Employed for querying and managing data within a relational database, allowing for efficient data manipulation.
+ - Power BI: Utilized for creating interactive visualizations and dashboards, making it easier to present findings and insights 
+
+## Data Modeling
+For the analysis of the impact of VR on learning outcomes, a regression model was utilized. The steps included:
+- Model Selection: A linear regression model was chosen to predict the improvement in learning outcomes based on hours of VR usage, engagement level, and perceived effectiveness of VR.
+- Splitting the Dataset: The dataset was split into training (80%) and testing (20%) sets to evaluate the model's performance.
+- Model Training: The training set was used to train the model using features such as:
+  - Hours of VR Usage Per Week
+  - Engagement Level
+  - Perceived Effectiveness of VR
+- Model Evaluation: The model was evaluated using metrics such as R-squared and Mean Absolute Error (MAE) to determine its accuracy. The R-squared value indicated how well the model explained the variance in learning outcomes.
+- Results Interpretation: The results suggested a positive correlation between increased hours of VR usage and improved learning outcomes, supporting the hypothesis that VR can enhance educational experiences.
+
+## Exploratory Data Analysis (EDA)
+EDA was conducted to uncover patterns and insights within the dataset. The following analyses were performed:
+- Descriptive Statistics: Calculated basic statistics (mean, median, mode, standard deviation) for numerical variables such as age, hours of VR usage, and engagement levels. This provided a summary of the dataset's distribution.
+- Visualizations:
+- Distribution of Age: A histogram was plotted to visualize the age distribution of students, revealing that most students were in their late teens to late twenties.
+- VR Usage: A bar chart displayed the number of students using VR versus those not using it, showing a near-equal split.
+- Engagement Levels: A box plot illustrated the range of engagement levels among VR users, highlighting some outliers who reported very high engagement.
+- Correlation Matrix: A heatmap was created to visualize correlations between numerical variables, indicating a strong positive correlation between hours of VR usage and perceived effectiveness.
+- Grouping Analysis: Grouped data by fields of study to observe differences in VR usage and perceived effectiveness. For instance, students in the Arts showed a higher engagement level compared to those in Science.
+- Qualitative Insights: The Feedback from all the educators and students regarding VR usage was analyzed thematically, identifying common sentiments about the technology's impact on creativity and learning.
+
+## Key Findings
+### Usage and Engagement
+- VR Usage: 8 students reported using VR in their education, while 10 did not.
+- Average Hours of Usage: Students who used VR averaged 5.25 hours per week.
+- Engagement Level: The engagement levels ranged from 1 (low) to 5 (high), with an average engagement level of 3.2 for those using VR.
+### Learning Outcomes
+- Improvement in Learning Outcomes: 8 students reported improvement, while 10 did not. Notably, those using VR indicated a positive correlation with learning outcomes.
+### Subject Focus
+- Subjects Taught with VR: Subjects included Computer Science, Art, Economics, and Math, with varying levels of instructor proficiency in VR.
+### Effectiveness and Feedback
+- Perceived Effectiveness of VR: On a scale of 1 to 5, the perceived effectiveness averaged at 3.5 for VR users, indicating a generally positive view.
+- Feedback from Educators: The feedback was predominantly positive among those using VR, with many expressing interest in further integrating VR into the curriculum.
+### Creativity and Collaboration
+- Impact on Creativity: Students reported varying impacts on creativity, with some indicating a high positive effect.
+- Collaboration: Several students collaborated with peers via VR, which enhanced their learning experience.
+### Stress Levels
+- Stress with VR Usage: The stress levels associated with VR usage varied, but a few students noted increased stress, suggesting a need for better support and training.
+
+## Recommendations
+1.	Increase Access to VR Equipment: Ensure that all students have access to necessary VR tools to enhance learning experiences.
+2.	Training for Instructors: Provide more comprehensive training for educators on using VR effectively in their teaching methods.
+3.	Monitor and Support: Regularly assess student stress levels related to VR usage and provide necessary support to address concerns.
+4.	Expand Curriculum Integration: Encourage the integration of VR across a wider range of subjects to fully exploit its educational potential.
+
+## Conclusion
+The integration of VR in education shows promise, particularly in enhancing engagement and learning outcomes. However, disparities in access, training, and perceived effectiveness need to be addressed to maximize the benefits of VR for all students.
+
+## Acknowledgments
+Thank you to all participating students and educators for their valuable feedback and contributions to this report.
+
+
