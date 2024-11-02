@@ -1,13 +1,18 @@
 # Virtual Reality In Education
 
 ## Table of Contents
- - Project Overview](#project-overview)
+ - [Project Overview](#project-overview)
+ - [Dataset Summary](#dataset-summary)
  - [Data Sources](#data-sources)
- - [Data Cleaning/Preparation](#data-cleaning/preparation)
- - [Tools](#tools)
+ - [Data Cleaning Process](#data-cleaning-process)
+ - [Data Preparation](#data-preparation)
+ - [Tools Used](#tools-used)
  - [Data Modelling](#data-modelling)
  - [Exploratory Data Analysis](#exploratory-data-analysis)
- - [Data Analysis](#data-Analysis)
+ - [Key Finding](#key-finding)
+ - [Recommendation](#recommendation)
+ - [Conclusion](conclusion)
+ - [Acknowledgement](#acknowledgement)
 
 ## Project Preview
 This report analyzes the usage of Virtual Reality (VR) in education among students 
